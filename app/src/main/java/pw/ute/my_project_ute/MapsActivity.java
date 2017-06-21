@@ -55,14 +55,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onDestroy()
     {
         super.onDestroy();
-        if (locationManager != null) {
-            try {
-                locationManager.removeUpdates(locationListener);
-            } catch (Exception ex) {
-                Log.i("T", "fail to remove location listners, ignore", ex);
-            }
-
-        }
     }
 
     @Override
